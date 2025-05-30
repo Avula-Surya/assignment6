@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Window</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: url("https://via.placeholder.com/1500x1000") no-repeat
+          center center fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center; /* Keep horizontal centering */
+        min-height: 100vh; /* Ensure body takes full height */
+      }
+
+      .login-container {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        width: 300px;
+        text-align: center;
+        color: white;
+        margin-top: 20px; /* Position at the top with small margin */
+      }
+
+      h2 {
+        margin-bottom: 30px;
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+
+      .input-field {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        background: white; /* White background for input fields */
+        color: black; /* Black text for input */
+        font-size: 16px;
+      }
+
+      .input-field::placeholder {
+        color: #666; /* Darker placeholder text */
+      }
+
+      .checkbox-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 20px 0;
+        font-size: 14px;
+      }
+
+      .checkbox-container input {
+        margin-right: 10px;
+      }
+
+      .login-btn {
+        background-color: #ffc107; /* Yellow button */
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .login-btn:hover {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login Window</h2>
+      <form>
+        <input
+          type="email"
+          class="input-field"
+          placeholder="Your Email Address"
+          required
+        />
+        <input
+          type="password"
+          class="input-field"
+          placeholder="Your Password"
+          required
+        />
+        <div class="checkbox-container">
+          <input type="checkbox" id="terms" required />
+          <label for="terms">Agree With Terms & Condition</label>
+        </div>
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+    </div>
+  </body>
+</html>

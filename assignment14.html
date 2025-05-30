@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoverable Sidenav Buttons</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Sidenav container */
+      .sidenav {
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #f1f1f1;
+        padding-top: 20px;
+      }
+
+      /* Sidenav buttons */
+      .sidenav a {
+        padding: 15px 25px;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        transition: 0.3s;
+        margin: 5px 0;
+      }
+
+      /* Colors for each button */
+      .sidenav a:nth-child(1) {
+        background-color: #4caf50; /* Green */
+        color: white;
+      }
+      .sidenav a:nth-child(2) {
+        background-color: #2196f3; /* Blue */
+        color: white;
+      }
+      .sidenav a:nth-child(3) {
+        background-color: #f44336; /* Red */
+        color: white;
+      }
+      .sidenav a:nth-child(4) {
+        background-color: #555; /* Dark Gray */
+        color: white;
+      }
+
+      /* Hover effect */
+      .sidenav a:hover {
+        opacity: 0.8;
+        transform: translateX(10px); /* Slight slide effect on hover */
+      }
+
+      /* Main content */
+      .main {
+        margin-left: 200px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidenav">
+      <a href="#menu1">Menu 1</a>
+      <a href="#menu2">Menu 2</a>
+      <a href="#menu3">Menu 3</a>
+      <a href="#menu4">Menu 4</a>
+    </div>
+
+    <div class="main">
+      <h2>Main Content</h2>
+      <p>Click on the sidenav buttons to open menus</p>
+    </div>
+  </body>
+</html>
